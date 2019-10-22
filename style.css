@@ -1,0 +1,343 @@
+body {
+    width: 80%;
+    margin: 0 10% 0 10%;
+    padding: 0;
+    background: #dddddd;
+}
+
+header {
+    width: 100%;
+    background-image: url("pictures/Bannière.png");
+    height: 176px;
+    padding: 0;
+    margin: 0;
+}
+
+footer {
+    clear: both;
+    width: 100%;
+
+}
+nav {
+    width: 100%;
+    background: #0000d8;
+}
+
+#banniere{
+    width: 100%;
+    height:auto;
+    position: relative;
+}
+
+.link-style{
+    text-decoration: none;
+    color: #a4a4f6;
+    font-family: 'Monda', sans-serif;
+}
+
+.logo{
+    height: 120px;
+    width: auto;
+
+}
+.text-style{
+    color: #a4a4f6;
+    padding: 1% 1% 1% 1%;
+    font-family: 'Monda', sans-serif;
+
+}
+
+.desc-style{
+    color: #0000a8;
+    padding: 1% 1% 1% 1%;
+    font-family: 'Monda', sans-serif;
+    text-align: center;
+    font-size: 20px;
+
+}
+
+
+#hamburger-content li{
+    display: inline-block;
+    width: 15%;
+    text-align: center;
+}
+
+#hamburger-content li:hover{
+    background: #0322ff;
+    color: #9999e6;
+}
+
+#nav-list{
+    text-align: center;
+}
+
+#hamburger, #hamburger-content{
+    display: inline;
+}
+
+#hamburger-button{
+    display: none;
+    cursor: pointer;
+    background: none;
+    border:none;
+    font-size: 40px;
+    padding: 0;
+    vertical-align: top;
+    line-height: 47px;
+    float: right;
+    margin-right:36px ;
+    color: white;
+}
+
+#hamburger-overlay{
+    display: none;
+    position: fixed;
+    z-index: 2;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+}
+
+#hamburger-sidebar{
+    display: none;
+    position: fixed;
+    width:84%;
+    z-index: 3;
+    height: 100%;
+    top:0;
+    left:0;
+    background-color: rgba(221, 221, 221, 0.82);
+    transform: translateX(-100%);
+    transition: transform 0.2s ease-out;
+}
+#hamburger-sidebar li{
+    display: block;
+}
+
+/* header du menu hamburger*/
+#hamburger-sidebar-header{
+    background-image: url("pictures/Bannière.png");
+    background-size: cover;
+    height: 148px;
+}
+
+#hamburger-sidebar-body{
+    padding: 16px 8px;
+    background: #dddddd;
+    height: 80%;
+}
+
+#hamburger-sidebar-body .button{
+    float: none;
+    display: block;
+    text-align: center;
+    margin-top: 16px;
+    height: auto;
+    padding:10px;
+    line-height: inherit;
+
+}
+
+.button{
+    color: #0000d8;
+    margin: 80px 20px 0 15px;
+    float: right;
+    border:2px solid #0000d8;
+    border-radius: 0.5em;
+    background: #8888cd;
+    padding: 5px;
+    width: 150px;
+    text-align: center;
+    box-shadow:2px 1px 1px rgba(0,0,0,0.4);
+}
+
+.button:hover{
+    background: #7070a9;
+    color: #0314ec;
+    border-color: #0000b4;
+}
+* {
+    box-sizing: border-box;
+    padding: 0
+}
+
+ul, ol {
+    list-style: none
+}
+.main {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    color: #fff;
+    top:0;
+
+}
+.slider {
+    position: relative
+}
+.slider .slider-parent {
+    padding: 0;
+    display: flex
+}
+.slider .slider-parent .images-list {
+    background-size: cover;
+}
+.slider .slider-parent .images-list:first-of-type, .slider .slider-parent .images-list:last-of-type {
+    background-image: url(pictures/Speecar-Kesta.jpg)
+}
+.slider .slider-parent .images-list:nth-of-type(2) {
+    background-image: url(pictures/Speedcar-KestaII.jpg)
+}
+.slider .slider-parent .images-list:nth-of-type(3) {
+    background-image: url(pictures/Speedcar-KestaIII.jpg)
+}
+.slider .slider-parent .images-list:nth-of-type(4) {
+    background-image: url(pictures/Speecar-Kesta.jpg)
+}
+.slider .buttom-circles {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    bottom: 20px;
+    color: #0000d8;
+}
+.slider .buttom-circles .buttom-circles-list {
+    display: inline-block;
+}
+.slider .buttom-circles .buttom-circles-list:hover .fa:before, .slider
+.buttom-circles .buttom-circles-list.slider-active .fa:before {
+    content: "\f111";
+}
+.slider > .fa {
+    position: absolute;
+    top: 45%;
+    color: #0000d8 ;
+}
+.slider > .fa:first-of-type { right: 5px}
+.slider > .fa:last-of-type { left: 5px}
+.slider .fa {
+    text-shadow: 5px 5px 5px #555;
+    cursor: pointer;
+}
+.slider .buttom-circles .buttom-circles-list {
+    font-size: 35px;
+}
+
+#bouton-modele{
+    border: 2px solid #0000d8;
+    border-radius: 5px;
+    color: #0000d8;
+    background: #9999e6;
+    padding: 3px 5px;
+}
+
+@media screen and (max-width: 812px) {
+    body{
+        width:100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav{
+        background: none;
+        padding: 0;
+        margin: 0;
+    }
+    .text-style{
+        padding: 5px 0 5px 0;
+        margin: 10px 5px;
+    }
+
+    h1 {
+        font-size: 42px;
+        line-height: 56px;
+    }
+
+    #hamburger-content {
+        display: none;
+    }
+
+    #hamburger-button, #hamburger-sidebar,
+    .hamburger-activated #hamburger-overlay {
+        display: block;
+    }
+
+    .hamburger-activated #hamburger-sidebar {
+        transform: translateX(0);
+    }
+    #hamburger-sidebar-body{
+        float: bottom;
+        text-align: center;
+    }
+    #hamburger-sidebar-header{
+        float: bottom;
+    }
+    #hamburger-sidebar li{
+        width:100%;
+        left:0;
+        background: none;
+        color: #0000d8;
+    }
+    #hamburger-sidebar li:hover{
+        background: none;
+        color: #0000d8;
+
+    }
+    #nav-list{
+        padding: 0;
+        margin: 0;
+    }
+
+    .button{
+        border: 1px solid #0000d8;
+        border-radius: 2px;
+        background: #a4a4f6;
+        padding: auto;
+        margin: auto;
+    }
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    .main{
+         width: 100%;
+         padding: 0;
+         margin: 0;
+     }
+    .slider .buttom-circles {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        bottom: -80px;
+        color: #0000d8;
+    }
+    .slider > .fa {
+        font-size: 60px
+    }
+    .slider>.fa:hover{
+        font-size: 50px;
+
+    }
+    .slider .buttom-circles .buttom-circles-list {
+        font-size: 45px;
+    }
+    .slider{
+        position: absolute;
+    }
+    #bouton-modele{
+        border: 2px solid #0000d8;
+        border-radius: 5px;
+        color: #0000d8;
+        background: #9999e6;
+        padding: 3px 5px;
+    }
+    .desc-style{
+        font-size: 20px;
+        padding-top: 60%;
+    }
+}
+

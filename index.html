@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SpeedCar</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link href="https://fonts.googleapis.com/css?family=Monda&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+
+</head>
+<body>
+<header>
+
+    <img class="logo" src="pictures/LogoSpeedCarBlanc.png" alt="logo" style="vertical-align: top">
+
+    <div id="hamburger">
+        <div id="hamburger-content">
+
+
+            <a href="#" class="button button-sign-up link-style">S'inscrire</a>
+            <a href="#" class="button button-sign-in link-style">Se connecter</a>
+            <nav>
+                <ul id="nav-list">
+                    <a class="link-style" href="#"><li id="main-page" class="text-style">Page principal</li></a>
+                    <a class="link-style" href="#"><li id="catalogue" class="text-style">Catalogue</li></a>
+                    <a class="link-style" href="#"><li id="card" class="text-style">Carte revendeur</li></a>
+                    <a class="link-style" href="#"><li id="historique" class="text-style">Historique</li></a>
+                    <a class="link-style" href="#"><li id="contact" class="text-style">Contact</li></a>
+                </ul>
+            </nav>
+        </div>
+        <button id="hamburger-button">&#9776;</button>
+        <div id="hamburger-sidebar">
+            <div id="hamburger-sidebar-header">
+                <img class="logo" src="pictures/LogoSpeedCarBlanc.png" alt="logo">
+            </div>
+            <div id="hamburger-sidebar-body"></div>
+        </div>
+        <div id="hamburger-overlay"></div>
+    </div>
+</header>
+<div class="main">
+    <div class="slider">
+        <ul class="slider-parent">
+            <li class="images-list" data-slider="1"></li>
+            <li class="images-list" data-slider="2"></li>
+            <li class="images-list" data-slider="3"></li>
+            <li class="images-list" data-slider="4"></li>
+        </ul>
+        <ol class="buttom-circles">
+            <li class="buttom-circles-list slider-active" data-slider="1"><i class="fa fa-circle-thin"></i></li>
+            <li class="buttom-circles-list" data-slider="2"><i class="fa fa-circle-thin"></i></li>
+            <li class="buttom-circles-list" data-slider="3"><i class="fa fa-circle-thin"></i></li>
+            <li class="buttom-circles-list" data-slider="4"></li>
+        </ol>
+        <i class="fa fa-chevron-right fa-5x"></i>
+        <i class="fa fa-chevron-left fa-5x"></i>
+    </div>
+</div>
+
+<p class="desc-style">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad alias aliquid assumenda at autem debitis deleniti,
+    dolor dolorem ducimus et ex exercitationem illo iure iusto, labore laboriosam maiores necessitatibus nemo nesciunt
+    nihil optio placeat recusandae rem vitae voluptatibus.
+</p>
+<div style="width: 100%; text-align: center; margin-bottom: 500px">
+    <a href="#" class="link-style"><span id="bouton-modele">Voir le modèle</span></a>
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script  src="function.js"></script>
+<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
